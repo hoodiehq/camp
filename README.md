@@ -11,7 +11,7 @@ Hoodie for the first time, and especially welcome people who never contributed
 to an Open Source Project before. We try to have issues for both beginners as
 well as challenges for more experienced contributors.
 
-> You don't build a community. You build a space.
+> You don't build a community. You build a space.  
 > – [@saronyitbarek](https://twitter.com/kwugirl/status/728370365957689344)
 
 ![Hoodie Camp](https://hoodiehq.github.io/camp/images/camp.png)
@@ -19,6 +19,8 @@ well as challenges for more experienced contributors.
 ## Hoodie Camp site
 
 _this is work in progress_
+
+This is based on the discussion at [hoodiehq/editorial#61](https://github.com/hoodiehq/editorial/issues/61#update-april-12)
 
 We want to create a website for new and existing contributors with three main
 sections:
