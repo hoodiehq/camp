@@ -1,0 +1,40 @@
+.app-header {
+  padding: 0 .5rem;
+
+  background: #444;
+  color: #eee;
+  font-size: .8em;
+  line-height: 2rem;
+
+  p {
+    margin: 0;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  .info {
+    text-align: right;
+  }
+
+  form {
+    display: none;
+    padding: .5rem;
+  }
+
+  &.show-login {
+    .info {
+      display: none;
+    }
+    form {
+      display: block;
+    }
+  }
+
+  input {
+    font: inherit;
+    display: block;
+    width: 100%;
+  }
+}

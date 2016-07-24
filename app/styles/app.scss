@@ -1,0 +1,33 @@
+@import 'header';
+@import 'footer';
+@import 'index';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font: 1em/1.4em Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+  font: inherit;
+  border: 0;
+  border-radius: .6em;
+  background: #222;
+  color: #fff;
+  padding: .3em .6em;
+}
+
+.container {
+  padding: 1rem;
+}
