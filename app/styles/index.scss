@@ -17,6 +17,10 @@
   display: flex;
   flex-flow: row wrap;
 
+  header {
+
+  }
+
   img {
     float: left;
     max-width: 80px;
@@ -40,14 +44,11 @@
   > div {
     width: calc(50% - 2rem - 1px);
     margin-bottom: 1rem;
+    padding-right: 1rem;
 
-    &:nth-child(even) {
-      padding-left: calc(2rem + 80px);
-    }
-    &:nth-child(odd) {
+    header {
       padding-left: calc(1rem + 80px);
-      padding-right: 1rem;
-      border-right: 1px solid #eee;
+      min-height: 120px;
     }
   }
 }

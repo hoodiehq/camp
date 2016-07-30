@@ -4,39 +4,98 @@
   <p>
     We created this place to <a href="http://hood.ie/blog/welcoming-communities">welcome new and existing Hoodie contributors</a> and to help maintainers keep an overview.
   </p>
+
+  <ul class="stats">
+    <li>
+      Camp Issues: {{model.upForGrabs.length}}
+      <small>({{#link-to "help" "Camp Issues"}}?{{/link-to}})</small>
+    </li>
+    <li>
+      Your First PR: {{model.yourFirstPR.length}}
+      <small>({{#link-to "help" "Your First PR"}}?{{/link-to}})</small>
+    </li>
+    <li>
+      First Timers Only: {{model.firstTimersOnly.length}}
+      <small>({{#link-to "help" "First Timers Only"}}?{{/link-to}})</small>
+    </li>
+  </ul>
+
+  <p>
+    <button {{action 'reloadIssues'}}>Reload issues from GitHub</button>
+  </p>
 </div>
 
 <div class="teams container">
   <div class="code">
-    {{#link-to "team" "code"}}<img src="/assets/images/dev-beaver.png" alt="" />{{/link-to}}
-    <h2>{{#link-to "team" "code"}}Code team{{/link-to}}</h2>
+    <header>
+      {{#link-to "team" "code"}}<img src="/assets/images/dev-beaver.png" alt="" />{{/link-to}}
+      <h2>{{#link-to "team" "code"}}Code team{{/link-to}}</h2>
 
-    <p>
-      Hey there, I’m Charlie the Dev Beaver. I love clean code and a great developer experience.
-    </p>
+      <p>
+        Hey there, I’m Charlie the Dev Beaver. I love clean code and a great developer experience.
+      </p>
+    </header>
+
+    <ul class="issues">
+      {{#each (first model.code 5) as |issue|}}
+        <li class="open {{issue-labels issue}}">
+          <a class="title" href="{{issue.url}}">{{issue.title}}</a>
+        </li>
+      {{/each}}
+    </ul>
   </div>
   <div class="design">
-    {{#link-to "team" "code"}}<img src="/assets/images/design-alpaca.png" alt="" />{{/link-to}}
-    <h2>{{#link-to "team" "code"}}Design team{{/link-to}}</h2>
+    <header>
+      {{#link-to "team" "code"}}<img src="/assets/images/design-alpaca.png" alt="" />{{/link-to}}
+      <h2>{{#link-to "team" "code"}}Design team{{/link-to}}</h2>
 
-    <p>
-      ¿Qué tal? I’m the Design Alpaca. I care about accessability and ease of use of our websites and apps.
-    </p>
+      <p>
+        ¿Qué tal? I’m the Design Alpaca. I care about accessability and ease of use of our websites and apps.
+      </p>
+    </header>
+
+    <ul class="issues">
+      {{#each (first model.design 5) as |issue|}}
+        <li class="open {{issue-labels issue}}">
+          <a class="title" href="{{issue.url}}">{{issue.title}}</a>
+        </li>
+      {{/each}}
+    </ul>
   </div>
   <div class="docs">
-    {{#link-to "team" "code"}}<img src="/assets/images/docs-chicken.png" alt="" />{{/link-to}}
-    <h2>{{#link-to "team" "code"}}Docs team{{/link-to}}</h2>
+    <header>
+      {{#link-to "team" "code"}}<img src="/assets/images/docs-chicken.png" alt="" />{{/link-to}}
+      <h2>{{#link-to "team" "code"}}Docs team{{/link-to}}</h2>
 
-    <p>
-      Docs docs docs! I’m the Docs Chickend and make sure that all our code is well documented.
-    </p>
+      <p>
+        Docs docs docs! I’m the Docs Chickend and make sure that all our code is well documented.
+      </p>
+    </header>
+
+    <ul class="issues">
+      {{#each (first model.documentation 5) as |issue|}}
+        <li class="open {{issue-labels issue}}">
+          <a class="title" href="{{issue.url}}">{{issue.title}}</a>
+        </li>
+      {{/each}}
+    </ul>
   </div>
   <div class="editorial">
-    {{#link-to "team" "code"}}<img src="/assets/images/blog-bear.png" alt="" />{{/link-to}}
-    <h2>{{#link-to "team" "code"}}Editorial team{{/link-to}}</h2>
+    <header>
+      {{#link-to "team" "code"}}<img src="/assets/images/blog-bear.png" alt="" />{{/link-to}}
+      <h2>{{#link-to "team" "code"}}Editorial team{{/link-to}}</h2>
 
-    <p>
-      Salut! We have lots of good stories here at Hoodie, I love to share them!
-    </p>
+      <p>
+        Salut! We have lots of good stories here at Hoodie, I love to share them!
+      </p>
+    </header>
+
+    <ul class="issues">
+      {{#each (first model.editorial 5) as |issue|}}
+        <li class="open {{issue-labels issue}}">
+          <a class="title" href="{{issue.url}}">{{issue.title}}</a>
+        </li>
+      {{/each}}
+    </ul>
   </div>
 </div>

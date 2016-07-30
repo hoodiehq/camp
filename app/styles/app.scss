@@ -1,6 +1,11 @@
+// colors
+$yourFirstPr: #7A3174 !default;
+$firstTimersOnly: #552133 !default;
+
 @import 'header';
 @import 'footer';
 @import 'index';
+@import 'issues';
 
 * {
   box-sizing: border-box;
