@@ -1,52 +1,25 @@
-# Camp
+# Welcome to Hoodie Camp!
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+> You don't build a community. You build a space.
+> – [@saronyitbarek](https://twitter.com/kwugirl/status/728370365957689344)
 
-## Prerequisites
+The Hoodie Camp is a space we created to welcome new and existing contributors.
+We work together on code, design, documentation and editorial, with the common
+goal to empower as many people as possible to express themselves with technology.
 
-You will need the following things properly installed on your computer.
+All teams create special starter issues for people who want to contribute to
+Hoodie for the first time, and especially welcome people who never contributed
+to an Open Source Project before. We try to have issues for both beginners as
+well as challenges for more experienced contributors.
 
-* [Git](http://git-scm.com/)
-* [Node.js](http://nodejs.org/) (with NPM)
-* [Bower](http://bower.io/)
-* [Ember CLI](http://ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
+Check out our app: [hoodie.camp](http://hoodie.camp).
 
-## Installation
+## About the hoodie.camp app
 
-* `git clone <repository-url>` this repository
-* change into the new directory
-* `npm install`
-* `bower install`
+[hoodie.camp](http://hoodie.camp) is an [Ember](http://emberjs.com/) hosted on
+GitHub pages. It works directly against the [GitHub API](https://developer.github.com/v3/).
 
-## Running / Development
+If you want to find out more about how it works and how to contribute to it,
+check out [app.md](app.md)
 
-* `ember server`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-`ember deploy production`
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+![Hoodie Camp](http://hoodie.camp/assets/images/camp-1828dc0fa2f4e23243706291a36a7910.png)
