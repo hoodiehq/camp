@@ -1,0 +1,53 @@
+.issues {
+  margin: 0;
+  padding: 0;
+  clear: both;
+  margin-bottom: 2rem;
+
+  a, span {
+    display: block;
+    padding: 10px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  a:focus,
+  a:hover {
+    background: #eee;
+  }
+  ul {
+    padding: 0;
+  }
+
+  > li {
+    clear: both;
+    overflow: hidden;
+    padding: 0 0 0 10px;
+    position: relative;
+    border-bottom: 1px solid #eee;
+
+    &:before,
+    &:after {
+      display: block;
+      position: absolute;
+      height: 100%;
+      content: '';
+      left: 0;
+      top: 0;
+    }
+
+    &:before {
+      border-left: 10px solid #ccc;
+    }
+
+    &:after {
+      left: 5px;
+      z-index: 10;
+    }
+
+    &.your-first-pr:before {
+      border-left-color: $yourFirstPr;
+    }
+  }
+}

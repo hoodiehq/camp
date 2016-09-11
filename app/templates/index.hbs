@@ -1,0 +1,147 @@
+<div class="welcome">
+  <div class="container">
+    <img src="assets/images/low-profile-dog.png" alt="" />
+    <h1>Welcome to Hoodie Camp!</h1>
+    <p>
+      We created this place to <a href="http://hood.ie/blog/welcoming-communities">welcome new and existing Hoodie contributors</a> and to help maintainers keep an overview.
+    </p>
+
+    <ul class="stats">
+      <li>
+        Camp Issues: {{model.upForGrabs.length}}
+        <small>({{#link-to "help" "Camp Issues"}}?{{/link-to}})</small>
+      </li>
+      <li>
+        Your First PR: {{model.yourFirstPR.length}}
+        <small>({{#link-to "help" "Your First PR"}}?{{/link-to}})</small>
+      </li>
+      <li>
+        First Timers Only: {{model.firstTimersOnly.length}}
+        <small>({{#link-to "help" "First Timers Only"}}?{{/link-to}})</small>
+      </li>
+    </ul>
+
+    <div class="button-container">
+      <button {{action 'reloadIssues'}}>Reload issues from GitHub</button>
+    </div>
+  </div>
+</div>
+
+<div class="teams">
+  <div class="container">
+    <div class="grid">
+      <div class="grid-col">
+        <div class="team">
+          <div class="team-img">
+            <img src="assets/images/dev-beaver.png" alt="" />
+          </div>
+          <div class="team-body">
+            <h2>{{#link-to "team" "code"}}Code team{{/link-to}}</h2>
+
+            <p>
+              Moin! I’m Charlie the Dev Beaver.<br>
+              I love clean code and a great developer experience.
+            </p>
+          </div>
+        </div>
+
+        <ul class="issues">
+          {{#each (first model.code 5) as |issue|}}
+            <li class="open {{issue-labels issue}}">
+              <a class="title" href="{{issue.url}}">{{issue.title}}</a>
+            </li>
+          {{/each}}
+          {{#unless model.code}}
+            <li>
+              <span>No issues right now, check back later!</span>
+            </li>
+          {{/unless}}
+        </ul>
+      </div>
+      <div class="grid-col">
+        <div class="team">
+          <div class="team-img">
+            <img src="assets/images/design-alpaca.png" alt="" />
+          </div>
+          <div class="team-body">
+            <h2>{{#link-to "team" "code"}}Design team{{/link-to}}</h2>
+
+            <p>
+              <span lang="es">¿Qué tal?</span>
+              I’m the Design Alpaca. I care about accessability and ease of use of our websites and apps.
+            </p>
+          </div>
+        </div>
+
+        <ul class="issues">
+          {{#each (first model.design 5) as |issue|}}
+            <li class="open {{issue-labels issue}}">
+              <a class="title" href="{{issue.url}}">{{issue.title}}</a>
+            </li>
+          {{/each}}
+          {{#unless model.design}}
+            <li>
+              <span>No issues right now, check back later!</span>
+            </li>
+          {{/unless}}
+        </ul>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="grid-col">
+        <div class="team">
+          <div class="team-img">
+            <img src="assets/images/docs-chicken.png" alt="" />
+          </div>
+          <div class="team-body">
+            <h2>{{#link-to "team" "code"}}Docs team{{/link-to}}</h2>
+            <p>
+              Docs docs docs! I’m the Docs Chicken and I make sure that all our code is well documented.
+            </p>
+          </div>
+        </div>
+
+        <ul class="issues">
+          {{#each (first model.documentation 5) as |issue|}}
+            <li class="open {{issue-labels issue}}">
+              <a class="title" href="{{issue.url}}">{{issue.title}}</a>
+            </li>
+          {{/each}}
+          {{#unless model.documentation}}
+            <li>
+              <span>No issues right now, check back later!</span>
+            </li>
+          {{/unless}}
+        </ul>
+      </div>
+      <div class="grid-col">
+        <div class="team">
+          <div class="team-img">
+            <img src="assets/images/blog-bear.png" alt="" />
+          </div>
+          <div class="team-body">
+            <h2>{{#link-to "team" "code"}}Editorial team{{/link-to}}</h2>
+
+            <p>
+              <span lang="fr">Salut!</span>
+              We have lots of good stories here at Hoodie, I love to share them!
+            </p>
+          </div>
+        </div>
+
+        <ul class="issues">
+          {{#each (first model.editorial 5) as |issue|}}
+            <li class="open {{issue-labels issue}}">
+              <a class="title" href="{{issue.url}}">{{issue.title}}</a>
+            </li>
+          {{/each}}
+          {{#unless model.editorial}}
+            <li>
+              <span>No issues right now, check back later!</span>
+            </li>
+          {{/unless}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

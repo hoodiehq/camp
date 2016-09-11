@@ -1,0 +1,16 @@
+<div class="container">
+  <p>
+    {{#link-to 'index'}}home{{/link-to}}
+  </p>
+  <h1>{{model.title}}</h1>
+
+  <p>
+    {{markdown-render model.content}}
+  </p>
+
+  <hr>
+
+  <p>
+    <a href="{{model.url}}">Edit this page in the Camp Wiki</a>
+  </p>
+</div>

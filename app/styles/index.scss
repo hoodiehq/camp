@@ -1,0 +1,64 @@
+.welcome {
+  overflow: hidden;
+  background: #eee;
+
+  .container {
+    max-width: 50rem;
+  }
+
+  h1 {
+    margin-top: 0;
+  }
+
+  img {
+    float: right;
+    max-width: 100%;
+    max-height: 160px;
+    margin-left: 2rem;
+  }
+
+  @media (max-width: 25em) {
+    img {
+      max-height: 100px;
+      margin-left: 1rem;
+    }
+  }
+
+  .button-container {
+    text-align: center;
+  }
+}
+
+.teams {
+  .team {
+    display: table;
+    width: 100%;
+    min-height: 120px;
+    margin-bottom: 1rem;
+
+    .team-img,
+    .team-body {
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: .5rem;
+      a {
+        text-decoration: none;
+      }
+    }
+
+    img {
+      float: left;
+      max-width: 80px;
+      max-height: 120px;
+      margin-right: 1rem;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+// colors
+$yourFirstPr: #7A3174 !default;
+$firstTimersOnly: #552133 !default;
+
+@import 'header';
+@import 'footer';
+@import 'index';
+@import 'issues';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1;
+}
+
+ul,
+p {
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ul {
+  padding-left: 0;
+  margin-left: 1rem;
+}
+
+body {
+  margin: 0;
+}
+
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+  font: inherit;
+  border: 0;
+  border-radius: .6em;
+  background: #3F51B5;
+  color: #fff;
+  padding: .3em .6em;
+}
+
+a {
+  color: #3F51B5;
+}
+
+.container {
+  padding: 2rem 1rem;
+  max-width: 65rem;
+  margin: auto;
+}
+
+.grid {
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.grid::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid-col {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 50em) {
+  .grid-col {
+    float: left;
+    width: 50%;
+  }
+}
