@@ -12,7 +12,21 @@ $firstTimersOnly: #552133 !default;
 }
 
 html {
-  font: 1em/1.4em Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1;
+}
+
+ul,
+p {
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ul {
+  padding-left: 0;
+  margin-left: 1rem;
 }
 
 body {
@@ -28,11 +42,40 @@ button {
   font: inherit;
   border: 0;
   border-radius: .6em;
-  background: #222;
+  background: #3F51B5;
   color: #fff;
   padding: .3em .6em;
 }
 
+a {
+  color: #3F51B5;
+}
+
 .container {
-  padding: 1rem;
+  padding: 2rem 1rem;
+  max-width: 65rem;
+  margin: auto;
+}
+
+.grid {
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.grid::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid-col {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 50em) {
+  .grid-col {
+    float: left;
+    width: 50%;
+  }
 }

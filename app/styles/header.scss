@@ -1,12 +1,11 @@
 .app-header {
-  padding: 0 .5rem;
+  padding: .5rem 1rem;
 
   background: #444;
   color: #eee;
   font-size: .8em;
-  line-height: 2rem;
 
-  p {
+  .info {
     margin: 0;
   }
 
@@ -20,10 +19,11 @@
 
   form {
     display: none;
-    padding: .5rem;
   }
 
   &.show-login {
+    padding: 0;
+
     .info {
       display: none;
     }
@@ -32,9 +32,17 @@
     }
   }
 
+  button {
+    padding: .5rem;
+    margin-right: .5rem;
+  }
+
   input {
     font: inherit;
     display: block;
     width: 100%;
+    padding: .5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }

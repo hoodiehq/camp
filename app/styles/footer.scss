@@ -1,13 +1,13 @@
 .app-footer {
-  margin: 2rem 0;
-  padding: 0 .5rem;
-
   text-align: right;
   color: #444;
-  font-size: .8em;
-  line-height: 2rem;
+  margin-bottom: 3rem;
 
-  min-height: 30rem;
-  background: 50% 100% url('images/camp.png') no-repeat;
-  background-size: contain;
+  img {
+    display: block;
+    width: 850px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 1rem;
+  }
 }

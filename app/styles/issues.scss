@@ -2,12 +2,15 @@
   margin: 0;
   padding: 0;
   clear: both;
+  margin-bottom: 2rem;
 
-  a {
-    color: #444;
-    text-decoration: none;
+  a, span {
     display: block;
     padding: 10px;
+  }
+
+  a {
+    text-decoration: none;
   }
   a:focus,
   a:hover {

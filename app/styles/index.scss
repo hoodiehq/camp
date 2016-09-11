@@ -2,53 +2,63 @@
   overflow: hidden;
   background: #eee;
 
+  .container {
+    max-width: 50rem;
+  }
+
   h1 {
-    margin: 1em 0 0;
+    margin-top: 0;
   }
 
   img {
     float: right;
-    width: 120px;
-    height: 160px;
+    max-width: 100%;
+    max-height: 160px;
+    margin-left: 2rem;
+  }
+
+  @media (max-width: 25em) {
+    img {
+      max-height: 100px;
+      margin-left: 1rem;
+    }
+  }
+
+  .button-container {
+    text-align: center;
   }
 }
 
 .teams {
-  display: flex;
-  flex-flow: row wrap;
-
-  header {
-
-  }
-
-  img {
-    float: left;
-    max-width: 80px;
-    max-height: 120px;
-    margin-left: calc(-80px - 1rem);
-  }
-
-  h2 {
-    margin: 0;
-  }
-
-  a {
-    color: inherit;
-
-    &:focus,
-    &:hover {
-      text-decoration: none;
-    }
-  }
-
-  > div {
-    width: calc(50% - 2rem - 1px);
+  .team {
+    display: table;
+    width: 100%;
+    min-height: 120px;
     margin-bottom: 1rem;
-    padding-right: 1rem;
 
-    header {
-      padding-left: calc(1rem + 80px);
-      min-height: 120px;
+    .team-img,
+    .team-body {
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: .5rem;
+      a {
+        text-decoration: none;
+      }
+    }
+
+    img {
+      float: left;
+      max-width: 80px;
+      max-height: 120px;
+      margin-right: 1rem;
     }
   }
 }

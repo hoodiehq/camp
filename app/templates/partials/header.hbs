@@ -9,16 +9,18 @@
   </p>
 
   <form class="login" {{action 'signIn' token on='submit'}}>
-    <label>
-      <strong>GitHub Token</strong> <small>No scope access required</small>
-      {{input value=token placeholder="01234567890abcdef01234567890abcdef012345"}}
-    </label>
-    <p>
-      You can <a href="https://github.com/settings/tokens/new">generate a new token from your GitHub account</a>
-    </p>
-    <p>
-      <button type="save">Sign in</button>
-      <a href="#" {{action 'toggleLogin'}}>cancel</a>
-    </p>
+    <div class="container">
+      <label>
+        <strong>GitHub Token</strong> <small>No scope access required</small>
+        {{input value=token placeholder="01234567890abcdef01234567890abcdef012345"}}
+      </label>
+      <p>
+        You can <a href="https://github.com/settings/tokens/new">generate a new token from your GitHub account</a>
+      </p>
+      <span>
+        <button type="save">Sign in</button>
+        <a href="#" {{action 'toggleLogin'}}>cancel</a>
+      </span>
+    </div>
   </form>
 </header>
