@@ -40,7 +40,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.rootURL = '/hoodie-camp';
+    ENV.rootURL = '/';
     ENV.locationType = 'hash';
   }
 
