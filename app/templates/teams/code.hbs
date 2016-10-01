@@ -1,0 +1,131 @@
+<div class="team">
+  <div class="container">
+    <p>
+      {{#link-to 'index'}}home{{/link-to}}
+    </p>
+
+    <div class="team-mascot">
+      <img src="assets/images/dev-beaver.png" alt="" />
+    </div>
+
+    <h1>Moin!</h1>
+
+    <p>
+      I’m the <a href="http://hood.ie/animals/#dev-beaver">Dev Beaver</a> and am
+      happy to welcome you on Hoodie’s Code Team.
+    </p>
+
+    <p>
+      Our main objective is to make Hoodie’s code as easy to contributo to as
+      possible. If there is something that doesn’t make sense, it’s on us, please
+      let us know and we will try to clarify it for you and document it for
+      everyone else for the future.
+    </p>
+
+    <p>
+      Our Code Team lead is <a href="https://twitter.com/gr2m/">Gregor</a>. He
+      keeps the overview of everything code and helps everyone interested to
+      contribute to or help maintain Hoodie’s codebase. Say hi <a href="https://twitter.com/gr2m">on twitter</a>
+      or <a href="http://hood.ie/chat">on our Hoodie Chat</a>.
+    </p>
+
+    <h2>What is Hoodie?</h2>
+
+    <p>
+      Hoodie, at its core, is a server that comes with its own database and a
+      client API. It basically allows you to build web applications with just
+      HTML, CSS and JavaScript, and use the <a href="https://github.com/hoodiehq/hoodie-client#api">Hoodie Client AP</a>
+      for user authentication and data persistance.
+    </p>
+
+    <p>
+      If you want to understand how things work internally, a good place to start
+      is the <a href="https://github.com/hoodiehq/hoodie/tree/master/server">Hoodie Server README</a>.
+      But don’t get intimidated by all of Hoodie’s code. We worked hard to split
+      up the code base into smaller modules, and if you want to start to contribute,
+      you can start contributing to each of this small modules, without the need
+      to understand all of Hoodie. Each module has their own documentation, tests
+      and instructions on how to get going.
+    </p>
+
+    <h2>How to contribute?</h2>
+
+    <p>
+      We have a <a href="https://github.com/hoodiehq/camp/issues?q=is%3Aopen+is%3Aissue+label%3ACode+label%3A%22up+for+grabs%22">list of prepared code issues</a> on our camp repository.
+      If you want to jump right in, these are for you :) Some of them are reserved
+      for <a href="https://github.com/hoodiehq/camp/issues?q=is%3Aopen+is%3Aissue+label%3ACode+label%3A%22up+for+grabs%22+label%3A%22Your+First+PR%22">first-time Hoodie Contributors</a>.
+      We also list the issues below.
+    </p>
+
+    <p>
+      We documented all our conventions on <a href="https://github.com/hoodiehq/hoodie/blob/master/CONTRIBUTING.md">contributing code to Hoodie</a>,
+      and if you continue contributing, we’d like you to read through it. But if
+      you are new to Hoodie, please don’t worry, start your first pull request,
+      we are more than happy to help you out with things like code style. Don’t
+      let it keep you from contributing in the first place, we are here to help.
+    </p>
+
+    <h2>Issue reserved for new code contributors</h2>
+
+    <p>
+      In collaboration with our friends at <a href="http://yourfirstpr.github.io/">Your First PR</a>,
+      we try to keep a list of issues reserved for new Hoodie contributors.
+    </p>
+
+    <ul class="issues">
+    {{#each model.yourFirstPRIssues as |issue|}}
+      <li class="open {{issue-labels issue}}">
+        <a class="title" href="{{issue.url}}">{{issue.title}}</a>
+      </li>
+    {{/each}}
+    {{#unless model.yourFirstPRIssues}}
+      <li class="empty">
+        So sorry, but we currently don’t have any issues reserved for new
+        contributors! Please <a href="https://twitter.com/hoodiehq">ping us on
+        twitter</a> or <a href="http://hood.ie/chat">in our Hoodie chat</a>,
+        we are happy to help you find something to work on
+      </li>
+    {{/unless}}
+    </ul>
+
+    <h2>Issue for code contributors</h2>
+
+    <ul class="issues">
+    {{#each model.notYourFirstPRIssues as |issue|}}
+      <li class="open {{issue-labels issue}}">
+        <a class="title" href="{{issue.url}}">{{issue.title}}</a>
+      </li>
+    {{/each}}
+    {{#unless model.notYourFirstPRIssues}}
+      <li class="empty">
+        So sorry, but we currently don’t have any issues reserved for new
+        contributors! Please <a href="https://twitter.com/hoodiehq">ping us on
+        twitter</a> or <a href="http://hood.ie/chat">in our Hoodie chat</a>,
+        we are happy to help you find something to work on
+      </li>
+    {{/unless}}
+    </ul>
+
+    <h2>How to help maintain?</h2>
+
+    <p>
+      Code maintainers are helping to review open pull requests to our code
+      repositories, help creating new camp issues so more people can work on
+      them, respond to issues make sure the problem can be reproduced and has
+      enough context to work on, and helps with code questions in our
+      <a href="http://hood.ie/chat">Hoodie Chat</a>.
+    </p>
+
+    <h2>Pull requests awaiting review</h2>
+
+    <p>
+      To be done
+    </p>
+
+    <h2>Stale issues and pull requests</h2>
+
+    <p>
+      To be done
+    </p>
+  </div>
+</div>

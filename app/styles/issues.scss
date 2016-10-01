@@ -49,5 +49,12 @@
     &.your-first-pr:before {
       border-left-color: $yourFirstPr;
     }
+
+    &.empty {
+      a {
+        display: inline;
+        padding: 0;
+      }
+    }
   }
 }

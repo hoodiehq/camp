@@ -67,6 +67,10 @@ export default Ember.Service.extend({
         return issue;
       });
 
+      if (options.labels) {
+        return issuesWithLabels(issues, options.labels);
+      }
+
       let issuesMap = {
         upForGrabs: issuesWithLabels(issues, ['up for grabs']),
         yourFirstPR: issuesWithLabels(issues, ['up for grabs', 'Your First PR']),

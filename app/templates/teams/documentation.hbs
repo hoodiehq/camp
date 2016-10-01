@@ -1,0 +1,72 @@
+<div class="team">
+  <div class="container">
+    <p>
+      {{#link-to 'index'}}home{{/link-to}}
+    </p>
+
+    <div class="team-mascot">
+      <img src="assets/images/docs-chicken.png" alt="" />
+    </div>
+
+    <h1 lang="es">Doooocs docs docs!</h1>
+
+    <p>
+      I’m the <a href="http://hood.ie/animals/#dev-beaver">Docs chickend</a> and
+      I make sure that all our code is well documented.
+    </p>
+
+    <h2>We are looking for a Documentation Team Lead</h2>
+
+    <p>
+      The documentation team has currently no team lead. A team lead is looking after
+      what we want to achieve as community and translates it into documentation-related
+      task. They try to grow a team of contributors and maintainers that help
+      to work on these issues and help others to become part of the team.
+    </p>
+
+    <p>
+      If you have any questions or would like to give it a try, please ping us
+      <a href="https://twitter.com/hoodiehq">on twitter</a> or <a href="http://hood.ie/chat/">on slack</a> :)
+    </p>
+
+    <h2>Issue for new documentation contributors</h2>
+
+    <ul class="issues">
+    {{#each model.yourFirstPRIssues as |issue|}}
+      <li class="open {{issue-labels issue}}">
+        <a class="title" href="{{issue.url}}">{{issue.title}}</a>
+      </li>
+    {{/each}}
+    {{#unless model.yourFirstPRIssues}}
+      <li class="empty">
+        <span>
+          So sorry, but we currently don’t have any issues reserved for new
+          contributors! Please <a href="https://twitter.com/hoodiehq">ping us on
+          twitter</a> or <a href="http://hood.ie/chat">in our Hoodie chat</a>,
+          we are happy to help you find something to work on
+        </span>
+      </li>
+    {{/unless}}
+    </ul>
+
+    <h2>Issue for recurring documentation contributors</h2>
+
+    <ul class="issues">
+    {{#each model.notYourFirstPRIssues as |issue|}}
+      <li class="open {{issue-labels issue}}">
+        <a class="title" href="{{issue.url}}">{{issue.title}}</a>
+      </li>
+    {{/each}}
+    {{#unless model.notYourFirstPRIssues}}
+      <li class="empty">
+        <span>
+          So sorry, but we currently don’t have any issues reserved for new
+          contributors! Please <a href="https://twitter.com/hoodiehq">ping us on
+          twitter</a> or <a href="http://hood.ie/chat">in our Hoodie chat</a>,
+          we are happy to help you find something to work on
+        </span>
+      </li>
+    {{/unless}}
+    </ul>
+  </div>
+</div>
