@@ -48,4 +48,4 @@ and answer the questions:
   If this is your first, welcome :tada: :smile: [Here is a great tutorial](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github) on how to send a pull request using the terminal.
 - [ ] 🏁 **Done** :+1: Replace the `in progress` label with `ready`. Ask in comments for a review :)
 
-Questions 🤔⁉ Ping us in the [Hoodie Chat](http://hood.ie/chat/) or on [Twitter](https://twitter.com/hoodiehq/)
+Questions 🤔❓ Ping us in the [Hoodie Chat](http://hood.ie/chat/) or on [Twitter](https://twitter.com/hoodiehq/)
