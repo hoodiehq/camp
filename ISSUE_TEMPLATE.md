@@ -5,10 +5,15 @@ This is a [starter issue](http://hood.ie/blog/starter-issues.html).
 ### 🆕🐥☝ First Timers Only
 This issue is reserved for people who never contributed to Open Source before. We know that the process of creating a pull request is the biggest barrier for new contributors. This issue is for you 💝 [About First Timers Only](http://www.firsttimersonly.com/).
 
-<!-- This section is special for October. After October bring back the
-     optional "Your First PR" section: https://git.io/vPqNO -->
-### 🎃💻👕 Hacktoberfest: Trick or Treat!
-If you haven’t yet, sign up for [Hacktoberfest](https://hacktoberfest.digitalocean.com/) to earn an exclusive T-Shirt. Plus I’m sure we can teach you a cool trick or two in the process
+<!-- This section is optional. "Your First PR" issue are reserved for
+new contributors. We try to have issues available for both new and
+existing contributors at all times. If you leave the section in, add the
+"Your First PR" label -->
+### :octocat:  Your First Pull Request?
+We would like to take the opportunity to invite someone who
+did not yet contribute to Hoodie to work on this issue. Follow
+[@YourFirstPR](https://twitter.com/yourfirstPR) on Twitter for more of
+these issues across many open source projects :)
 
 ### 🤔 What you will need to know
 Node.js, Photoshop. Knowledge of [something](link_to_project) would be helpful, but you can probably figure it out as you go :)
