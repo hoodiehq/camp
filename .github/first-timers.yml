@@ -1,0 +1,5 @@
+labels:
+  - first-timers-only
+  - hacktoberfest
+  - available
+template: .github/FIRST_TIMERS_ISSUE_TEMPLATE.md 
