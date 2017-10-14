@@ -18,7 +18,7 @@ Bugs are pretty self-explanatory, but some features or changes might be less obv
 
 <!-- Remove for feature work, editorial, etc. -->
 ### 🐞 The Bug
-Steps to reproduce, or a snippet of sample code showing the bad behvior
+Steps to reproduce, or a snippet of sample code showing the bad behaviour
 
 ### :dart: The goal
 This should help a new contributor envision success as they get started, and answer the questions:
@@ -32,14 +32,14 @@ This should help a new contributor envision success as they get started, and ans
 - [ ] 👌 **Accept our invitation** to this repository. Once accepted, assign yourself to this repository
 - [ ] 👓 **Please review** our [Code of Conduct](http://hood.ie/code-of-conduct/)  
   In a nutshell: be patient and actively kind with us 😊
-- [ ] 🔄 **replace** the `up for grabs` label with `in progress`.
+- [ ] 🔄 **replace** the `available` label with `in progress`.
 - [ ] [**Setup the repository locally**](https://github.com/hoodiehq/...) Ensure the tests pass, or docs build...
 - [ ] **Do the main thing**
   - Perhaps suggestions on sub-tasks
   - Or a good workflow/feeback loop
 - [ ] 🔀 **Start a Pull Request**. Mention `closes hoodiehq/camp#THIS_ISSUE_NUMBER` in the description.  
   If this is your first, welcome :tada: :smile: [Here is a great tutorial](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github) on how to send a pull request using the terminal.
-- [ ] 🏁 **Done** :+1: Replace the `in progress` label with `ready`. Ask in comments for a review :)
+- [ ] 🏁 **Done** :+1: Replace the `in progress` label with `ready for review`. Ask in comments for a review :)
 
 ### 🤔❓ Questions
 
