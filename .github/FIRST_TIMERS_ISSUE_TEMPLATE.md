@@ -12,7 +12,7 @@ If you haven’t yet, sign up for [Hacktoberfest](https://hacktoberfest.digitalo
 Nothing. This issue is meant to welcome you to Open Source :) We are happy to walk you trough the process.
 
 ### :clipboard: Step by Step
-- [ ] 🙋 **Claim this issue**: Comment below (or assign yourself and continue at step 4 :)  
+- [ ] 🙋 **Claim this issue**: Comment below  
   Please 🙏 only claim if you want to start working on it within a day. We will select a person at random as the contributor the day after the issue is created. 
   Once claimed we add you as contributor to this repository.
 - [ ] 👌 **Accept our invitation** to this repository. Once accepted, assign yourself to this repository
