@@ -12,12 +12,8 @@ Hoodie for the first time, and especially welcome people who never contributed
 to an Open Source Project before. We try to have issues for both beginners as
 well as challenges for more experienced contributors.
 
-Check out our app: [hoodie.camp](http://hoodie.camp).
-
 ## Contributing to the Hoodie Camp app
 
 The source code for it is on the [master branch](https://github.com/hoodiehq/camp/tree/master).
 If you want to contribute please make sure to send pull requests to that branch
 only. This README is located at [public/README](https://github.com/hoodiehq/camp/blob/master/public/README.md)
-
-![Hoodie Camp](http://hoodie.camp/assets/images/camp-1828dc0fa2f4e23243706291a36a7910.png)
