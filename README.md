@@ -8,9 +8,9 @@ A short introduction of this app could easily go here.
 You will need the following things properly installed on your computer.
 
 - [Git](https://git-scm.com/downloads)
-- [Node.js](http://nodejs.org/) (with NPM)
-- [Bower](http://bower.io/)
-- [Ember CLI](http://ember-cli.com/)
+- [Node.js](https://nodejs.org/) (with NPM)
+- [Bower](https://bower.io/)
+- [Ember CLI](https://ember-cli.com/)
 - [PhantomJS](https://phantomjs.org/download.html)
 
 ## Installation
