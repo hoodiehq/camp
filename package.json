@@ -8,6 +8,7 @@
     "test": "tests"
   },
   "scripts": {
+    "clean": "npx rimraf dist/*",
     "build": "ember build",
     "deploy": "ember deploy production",
     "start": "ember server",
